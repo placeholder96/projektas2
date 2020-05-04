@@ -1,0 +1,309 @@
+*,
+*::before
+*::after{
+box-sizing:border-box;
+}
+
+html, body{
+font-size:16px;
+overflow-x: hidden;	
+}
+
+
+/* ------------Hero ------------*/
+.hero {background:
+linear-gradient(
+rgb(219, 191, 190, 0.7), 
+rgb(219, 191, 190, 0.7)
+),
+url(../images/people.jpg);
+background-repeat:no-repeat;
+background-size:100% 96%;
+
+}
+
+
+.intro{text-align: center;
+padding-top:150px;
+letter-spacing:-0.016em
+}
+.intro p{font-size:1.375rem; }
+
+.intro h1{font-size:3.6875rem;
+}
+
+.intro .container{color:#ebd8d6;}
+
+.intro a{font-size:1.5rem; 
+margin-top:122px; 
+text-align: center;
+background-color:#1abc9c;	
+padding:12px 49px 16px 52px;
+display: inline-block;
+border:6px solid rgba(93, 175, 156, 0.5);
+border-bottom-color:rgb(120, 216, 197); 
+}
+
+a{text-decoration: none;
+color:white;	
+}
+/* Container */
+.container{max-width:960px;
+margin:0 auto;
+}
+
+.container-flex{display: flex;
+}
+.container .line{
+max-width:623px; 
+height:1px;
+align-content:center;
+margin-left:auto;	
+margin-right: auto;
+background:white;
+border-bottom:2px  #313030;
+
+}
+
+
+/* --------------Header ----------*/
+.main-header{width:100%;}
+.main-header .container{justify-content:space-between;
+align-items: center;}
+
+.logo{font-size:1.5rem;
+color:#eddfde; }
+
+.nav-menu li{padding-right:46px;
+list-style: none;
+font-size:1.1875rem;
+letter-spacing:0.05em;	
+ }
+.nav-menu li:nth-child(1){
+text-decoration-line:underline;	
+}
+
+.nav-menu a{text-decoration: none;
+color:white;	
+}
+
+.nav-menu a:hover{
+color:#1abc9c;	
+}
+
+.nav-menu a:active{
+text-decoration-line:underline;	
+}
+/*-----------About ----------*/
+.info{text-align: center;
+background-color:white;
+ }
+
+
+
+.info h1{margin-top:122px;
+color:#1abc9c }
+
+.info p{color:#95a5a6;
+letter-spacing:0.05em}
+
+.boxes{margin-top:77px;
+text-align:center;}
+
+
+.box{margin:78px auto 0; 
+}
+
+.box h3{color:#1abc9c;
+font-size:1.5rem;
+}
+
+.box p{margin-left:25px; 
+max-height:165px; 
+max-width:250px; 
+letter-spacing:0.05em;
+font-size:0.9375rem;
+color:#95a5a6;
+text-align:left;
+}
+
+/*--------- Gallery ------------*/
+.gallery{
+margin-top:152px;
+text-align: center;
+}
+
+.gallery > .container-flex{
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+.gallery h2 a{
+font-size:1.5rem;
+letter-spacing:-0.016em; 
+margin-top:75px;
+background-color:#1abc9c;	
+padding:20px 29px;
+display: inline-block;
+}
+
+.gallery h2 a:hover{padding-left:75px;
+padding-right:0; 
+}
+.gallery i{margin-left:25px;}
+
+.photo{position: relative;
+width: calc(50% - 15px);
+margin-top: 55px;
+float: left;	
+}
+
+.photo img{display:block;
+width:100%;
+}
+
+
+
+
+/*----------Text on hover---------*/
+#popup{
+max-height:39%; 
+width:100%; 
+visibility:visible;
+display:block;
+position:absolute;
+bottom:0%;   
+background-color:#1abc9c;
+text-align:left;
+border-top:6px solid #48a996;
+}
+
+#popup h1{font-size:1.8rem;
+letter-spacing:-0.016em; 
+color:white;
+margin-left:10px; }
+
+#popup p{font-size:0.93rem;
+letter-spacing:-0.016em; 
+color:#78d8c5;
+margin-left:10px;
+}
+
+
+
+.photo:hover #popup {visibility: visible;
+display: block;
+width:100%; 
+}
+
+.photo:hover img{filter:sepia()}
+
+/*Icon-------------------------------------------------*/
+#popup i {
+max-height:37px;
+max-width:auto;
+margin-top:-70%; 
+margin-left:85%;
+margin-bottom:auto;
+margin-right:auto;
+position:absolute;    
+background-color:#1abc9c;
+color:white;	
+border:6px solid rgba(72, 169, 150, 0.2);
+}
+
+/*--------- Contact------------*/
+.contact{text-align: center;
+margin-bottom:150px; 	
+}
+
+.contact h1{margin-top:150px;
+margin-bottom;100px;
+font-size:3.73rem;
+color:#1abc9c}
+
+/*--------Footer---------------*/
+footer{min-width:100px; 
+background-color:#1abc9c;
+}
+
+footer h1{color:white;
+ }
+
+.footer-bottom{color:white;
+font-size:1.5rem;
+letter-spacing:-0.016em; 	
+display:flex;
+justify-content: space-between;
+padding-bottom:50px;
+margin-top:84px
+}
+
+.soc ul{list-style:none;
+display:flex;
+ }
+
+.soc i{color: #1abc9c;
+ }
+
+.soc-i{display:block; 
+background:white;
+margin-right:235px;
+margin-right:auto;
+padding:24px 36px 24px 36px;
+outline:7px solid rgba(120, 216, 197, 0.6);
+}
+
+/*Responsive design--600PX---------------------------*/
+/* Header ----------------*/
+@media only screen and (max-width:600px){
+.main-header .nav-menu ul li{
+font-size:0.75rem;
+margin-left:-29px;}
+
+/*Gallery -----------*/
+.photo{width: calc(100%);	
+}
+/* Boxes ------------*/
+.box p{margin-left:7px; 
+letter-spacing:0em;
+font-size:0.9375rem;
+}
+/*Contact---------------*/
+.contact input{padding:5px;
+margin:10px;
+margin-right:100%}
+/*-Pop Up------------------- */
+#popup h1{margin-top:2px; 
+font-size:1rem;
+letter-spacing:-0.016em; 
+margin-left:10px;
+height:15px }
+
+#popup p{font-size:1rem;
+letter-spacing:-0.016em; 
+}
+
+#popup i{margin-top:-70%;
+margin-left:85%;
+font-size:35px; }
+
+
+/* Footer -----------*/
+.footer-bottom{
+font-size:1rem;
+letter-spacing:-0.016em; 	
+}
+
+.soc i{
+margin:-19px;
+font-size:30px; 	
+}
+
+
+.soc-i i{font-size:5px  
+margin-right:35px;
+margin-left:-12px;
+}
+}/*<-- Responsive End*/
+
